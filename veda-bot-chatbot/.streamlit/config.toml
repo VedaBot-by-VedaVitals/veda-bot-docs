@@ -1,0 +1,30 @@
+# .streamlit/config.toml
+# Production configuration for VedaBot with iframe embedding support
+
+[server]
+headless = true
+port = 8501
+baseUrlPath = ""
+enableCORS = false
+enableXsrfProtection = false
+runOnSave = false
+enableWebsocketCompression = true
+maxUploadSize = 200
+maxMessageSize = 200
+
+[theme]
+primaryColor = "rgb(28, 69, 50)"
+backgroundColor = "#AFD9B1"
+secondaryBackgroundColor = "#DFF5E2"
+textColor = "rgb(28, 69, 50)"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[logger]
+level = "INFO"
+messageFormat = "%(asctime)s %(levelname)s: %(message)s"
